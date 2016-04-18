@@ -208,21 +208,38 @@ img { max-width: 100%; }
   display: block;
   padding: 0px 15px 5px 15px;
   background: #ffffff;
+  text-align: center;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.logo-nav {
-  padding: 6px 0 10px 0;
+.nav-center, .nav-left, .nav-right{
+  display: inline-block;
+  height: 100%;
+  max-width: 300px;
+  font-size: 24px;
+}
+.nav-item{
+  display: inline-block;
+  font-family: 'Pacifico', cursive;
+  width: 100px;
+}
+.left{
+  text-align: right;
+}
+.right{
+  text-align: left;
+}
+.heart {
+  padding: 4px 0 10px 0;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
   width: 45px;
-  display: block;
 }
 .opacity-nav {
   opacity: 0.8;
@@ -505,7 +522,8 @@ p {
 
 /*----------------------------------------- 6) Hero --------------------------------------------------*/
 #home {
-  background: url('../images/hero1.jpeg');
+  font-family: 'Pacifico', cursive;
+  background: url('../images/proposal.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -525,18 +543,22 @@ p {
 }
 .hero-content{
   position: absolute;
-  text-align: center;
-  min-width: 300px;
-  left: 50%;
-  top: 50%;
-  padding: 65px;
-  background: rgba(255, 255, 255, 0.8);
-  outline: 4px double #FFFFFF;
-  outline-offset: 8px;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  /*text-align: center;*/
+  /*width: 80%;*/
+  /*max-width: 500px;*/
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  line-height: 50px;
+  left: 0%;
+  top: 20%;
+  /*padding: 40px;*/
 }
-
+.hero-line{
+  padding: 5px 20px;
+  margin-bottom: 2px;
+  width: auto;
+  background: rgba(0, 0, 0, 0.8); 
+}
 /*mouse*/
 .mouse-icon {
   position: absolute;

@@ -90,11 +90,11 @@
 
     //typed js
     $(".typed").typed({
-        strings: ["My Name is M.Reza", "I'm a Web Designer", "Love Simplicity"],
+        strings: ["April 15th, 2017"],
         typeSpeed: 100,
         backDelay: 900,
         // loop
-        loop: true
+        loop: false
     });
 
     //owl carousel
