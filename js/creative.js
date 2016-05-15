@@ -8,15 +8,34 @@
     "use strict"; // Start of use strict
 
     $(window).scroll(function () {
-        if( $(window).scrollTop() > $('#mainNav-bottom').offset().top) {
-            $('#mainNav-bottom').hide();
-            $('#mainNav-top').show();
+        if ( $(window).scrollTop() > ( $('#home').offset().top + $('#home').height() - $('#mainNav').height() - 10) ) {
+            $('#mainNav').addClass("navbar-fixed-top");
+            $('#mainNav').removeClass("navbar-fixed-bottom");
+        } else {            
+            $('#mainNav').removeClass("navbar-fixed-top");
+            $('#mainNav').addClass("navbar-fixed-bottom");
         }
-        if ($(window).scrollBottom() < $('#header').offset().bottom) {
-            $('#mainNav-top').hide();
-            $('#mainNav-bottom').show();
+        if ( $(window).scrollTop() > ( ($('#home').offset().top + $('#home').height() - $('#mainNav').height())*.7 ) ) {
+            $('.fronds').addClass('fronds-after');
+        } else {
+            $('.fronds').removeClass('fronds-after');
         }
     });
+
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+    // Highlight the top nav as scrolling occurs
+    $('body').scrollspy({
+        target: '#mainNav',
+        offset: 51
+    })
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
@@ -30,6 +49,14 @@
             top: 100
         }
     })
+
+    $(function() {
+        $('#pop').on('click', function(e) {
+            e.preventDefault();
+            $('#imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal').modal('show');   
+        });     
+    });
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();

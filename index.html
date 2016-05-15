@@ -24,6 +24,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/timeline.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,15 +37,25 @@
 
 <body id="page-top">
 
-<!--     <div class="fronds">
-        <img class="left" src="img/palm_fronds.png" class="img-responsive" alt="">
-        <img class="right" src="img/palm_fronds.png" class="img-responsive" alt=""></span>
+    <!-- Creates the bootstrap modal where the image will appear -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
+                    <img src="" id="imagepreview" class="img-responsive" >
+                </div>
+            </div>
+        </div>
     </div>
- -->    <div class="fronds-after">
-        <img class="left-after" src="img/palm_fronds.png" class="img-responsive" alt="">
-        <img class="right-after" src="img/palm_fronds.png" class="img-responsive" alt=""></span>
+    <!-- Palm Fronds -->
+    <div class="fronds">
+        <img id="frond-left" src="img/palm_fronds.png" class="img-responsive" alt="">
+        <img id="frond-right" src="img/palm_fronds.png" class="img-responsive" alt="">
     </div>
-    <nav id="mainNav-bottom" class="navbar navbar-default navbar-fixed-bottom">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-bottom">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -59,54 +70,17 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-center">
-                    <li>
-                        <a class="page-scroll" href="#about">Home</a>
+                    <li class="active">
+                        <a class="page-scroll" href="#home">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Our Story</a>
+                        <a class="page-scroll" href="#our-story">Our Story</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">The Wedding</a>
+                        <a class="page-scroll" href="#wedding">The Wedding</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Gifts</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">RSVP</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <nav id="mainNav-top" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-center">
-                    <li>
-                        <a class="page-scroll" href="#page-top">Home</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Our Story</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">The Wedding</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Gifts</a>
+                        <a class="page-scroll" href="#registry">Registry</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">RSVP</a>
@@ -118,170 +92,119 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <header id="header">
+    <header id="home">
         <div class="header-content">
-            <div class="header-content-inner">
+            <div class="header-content-inner animation fadeIn animated">
                 <h2>We're getting married!</h2>
                 <h1>AMANDA & TYLER</h1>
                 <hr>
-                <h3>April 15th, 2017</h3>
-                <h3>Brooklyn, NY</h3>
+                <h4>April 15th, 2017</h4>
+                <h4>Brooklyn, NY</h4>
             </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
+    <section class="bg-light" id="our-story">
         <div class="container">
+            <div class="section-header">
+                <h2 class="section-heading">Our Story</h2>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-date">
+                        <h4>2005</h4>
+                    </div>
+                    <div class="timeline-panel">
+                        <h3 class="timeline-title">How we met</h3>
+                        <a href="#" id="pop">
+                            <img id="imageresource" src="img/8th-grade.jpg" class="img-responsive" alt="">
+                        </a>
+                        <p>Tyler and Amanda met as kids in middle school. Amanda was a new student in 7th grade, and Tyler, quickly smitten, was eager to show her around.</p>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-date">
+                        <h4>2008</h4>
+                    </div>
+                    <div class="timeline-panel">
+                        <h3 class="timeline-title">Our First Date</h3>
+                        <a href="#" id="pop">
+                            <img id="imageresource" src="img/highschool.jpg" class="img-responsive" alt="">
+                        </a>
+                        <p>After just 3 years of courtship, Tyler's crush was finally reciprocated, and Amanda agreed to go on a date at the Central Park zoo.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-date">
+                        <h4>2009</h4>
+                    </div>
+                    <div class="timeline-panel">
+                        <h3 class="timeline-title">Highschool Sweethearts</h3>
+                        <a href="#" id="pop">
+                            <img id="imageresource" src="img/highschool.jpg" class="img-responsive" alt="">
+                        </a>
+                        <p>Tyler and Amanda quickly became</p>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-date">
+                        <h4>2005</h4>
+                    </div>
+                    <div class="timeline-panel">
+                        <h3 class="timeline-title">How we met</h3>
+                        <a href="#" id="pop">
+                            <img id="imageresource" src="img/field.jpg" class="img-responsive" alt="">
+                        </a>
+                        <p>Tyler and Amanda met at Horace Mann when they were both in the 7th grade. Amanda was a new student, and Tyler was quickly smitten. </p>
+                    </div>
+                </li>
+                <li class="timeline-end">
+                    <div class="timeline-date">
+                        <h4>2016</h4>
+                    </div>
+                    <!-- <div class="timeline-panel">
+                        <h3 class="timeline-title">How we met</h3>
+                        <a href="#" id="pop">
+                            <img id="imageresource" src="img/field.jpg" class="img-responsive" alt="">
+                        </a>
+                        <p>Tyler and Amanda met at Horace Mann when they were both in the 7th grade. Amanda was a new student, and Tyler was quickly smitten. </p>
+                    </div> -->
+                </li>
+            </ul>
+            <h3 class="proposal">"Will you marry me?"</h3>
+        </div>
+        <div class="container-fluid full-bleed">
+            <img src="img/proposal.jpg" class="img-responsive" alt="">
+        </div>
+    </section>
+
+    <section id="wedding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-heading">The Wedding</h2>
+            </div>
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                <div class="col-sm-6">
+                    <h4>Ceremony and Reception</h4>
+                    <p>Our ceremony and reception will take place at <a href="http://www.26bridge.com/" target="_blank">26 Bridge</a> in Brooklyn, New York. Please plan to arrive between 5:30 and 6:00pm. The ceremony will begin at 6:15pm.</p>
+                    <h4>Hotels</h4>
+                    <p>We've arranged room blocks at 2 hotels in New York. <a>The Dazzler</a> is in Brooklyn, just a quick cab ride away from the venue. <a>The Sheraton</a> in Times Square is further from the venue, but a convenient place to stay if you plan to spend time in New York before or after the wedding.</p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="responsive-frame"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1PxhC7FbSLqYj0TooP-Nr1vqdz8I" width="640" height="480" scrolling="no"></iframe></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <section class="bg-light" id="registry">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
-                    </div>
-                </div>
+            <div class="section-header">
+                <h2 class="section-heading">Registry</h2>
             </div>
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <aside class="bg-dark">
         <div class="container text-center">
@@ -292,25 +215,6 @@
         </div>
     </aside>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
