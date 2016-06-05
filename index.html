@@ -23,9 +23,9 @@
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
     <link rel="stylesheet" href="css/timeline.css" type="text/css">
-
+    <link rel="stylesheet" href="css/gallery.css" type="text/css">
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -38,16 +38,28 @@
 <body id="page-top">
 
     <!-- Creates the bootstrap modal where the image will appear -->
-    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-                    <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                     <img src="" id="imagepreview" class="img-responsive" >
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <div class="modal-body">
+                    <img id="imagepreview" src="">
+                </div>
+            </div>
+        </div>
     </div>
+
     <!-- Palm Fronds -->
     <div class="fronds">
         <img id="frond-left" src="img/palm_fronds.png" class="img-responsive" alt="">
@@ -77,13 +89,16 @@
                         <a class="page-scroll" href="#our-story">Our Story</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#wedding">The Wedding</a>
+                        <a class="page-scroll" href="#when-where">When & Where</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#bridal-party">Bridal Party</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#registry">Registry</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">RSVP</a>
+                        <a class="page-scroll" href="#rsvp">RSVP</a>
                     </li>
                 </ul>
             </div>
@@ -104,18 +119,17 @@
         </div>
     </header>
 
-    <section class="bg-light" id="our-story">
+    <section id="our-story" class="bg-light no-footer">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-heading">Our Story</h2>
             </div>
             <ul class="timeline">
                 <li>
-                    <div class="timeline-date">
-                        <h4>2005</h4>
-                    </div>
+                    <div class="circle"></div>
                     <div class="timeline-panel">
-                        <h3 class="timeline-title">How we met</h3>
+                        <h3 class="timeline-title">How We Met</h3>
+                        <h4 class="timeline-subtitle">September, 2005</h4>
                         <a href="#" id="pop">
                             <img id="imageresource" src="img/8th-grade.jpg" class="img-responsive" alt="">
                         </a>
@@ -123,9 +137,7 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-date">
-                        <h4>2008</h4>
-                    </div>
+                    <div class="circle"></div>
                     <div class="timeline-panel">
                         <h3 class="timeline-title">Our First Date</h3>
                         <a href="#" id="pop">
@@ -135,9 +147,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-date">
-                        <h4>2009</h4>
-                    </div>
+                    <div class="circle"></div>
                     <div class="timeline-panel">
                         <h3 class="timeline-title">Highschool Sweethearts</h3>
                         <a href="#" id="pop">
@@ -147,9 +157,7 @@
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-date">
-                        <h4>2005</h4>
-                    </div>
+                    <div class="circle"></div>
                     <div class="timeline-panel">
                         <h3 class="timeline-title">How we met</h3>
                         <a href="#" id="pop">
@@ -159,9 +167,7 @@
                     </div>
                 </li>
                 <li class="timeline-end">
-                    <div class="timeline-date">
-                        <h4>2016</h4>
-                    </div>
+                    <div class="circle"></div>
                     <!-- <div class="timeline-panel">
                         <h3 class="timeline-title">How we met</h3>
                         <a href="#" id="pop">
@@ -171,17 +177,18 @@
                     </div> -->
                 </li>
             </ul>
-            <h3 class="proposal">"Will you marry me?"</h3>
+            <h3 class="proposal-title">The Proposal</h3>
+            <h4 class="proposal-date">February 27, 2016</h4>
         </div>
         <div class="container-fluid full-bleed">
             <img src="img/proposal.jpg" class="img-responsive" alt="">
         </div>
     </section>
 
-    <section id="wedding">
+    <section id="when-where">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-heading">The Wedding</h2>
+                <h2 class="section-heading">When & Where</h2>
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -197,7 +204,83 @@
         </div>
     </section>
 
-    <section class="bg-light" id="registry">
+    <section id="bridal-party" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-heading">Bridal Party</h2>
+            </div>
+            <h4>Bridesmaids</h4>
+            <div class="gal-container">
+                <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                        <a id="pop" href="#" data-toggle="modal" data-target="#3">
+                            <img src="http://placemi.com/yggpo/1000x750">
+                            <div class='gal-item-hover'>
+                                hello
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                        <a id="pop" href="#" data-toggle="modal" data-target="#4">
+                            <img src="http://placemi.com/49zqo/1000x750">
+                            <div id="pop" class='gal-item-hover'>
+                                <div class="gal-item-name">Molly Duff</div>
+                                <div class="gal-item-title">Maid of Honor</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                        <a id="pop" href="#" data-toggle="modal" data-target="#4">
+                            <img src="http://placemi.com/49zqo/1000x750">
+                            <div class='gal-item-hover'>
+                                hello
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h4>Groomsmen</h4>
+            <div class="gal-container">
+                <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                        <a id="pop" href="#" data-toggle="modal" data-target="#3">
+                            <img src="http://placemi.com/yggpo/1000x750">
+                            <div class='gal-item-hover'>
+                                hello
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                        <a id="pop" href="#" data-toggle="modal" data-target="#4">
+                            <img src="http://placemi.com/49zqo/1000x750">
+                            <div id="pop" class='gal-item-hover'>
+                                <div class="gal-item-name">Molly Duff</div>
+                                <div class="gal-item-title">Maid of Honor</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                    <div class="box">
+                        <a id="pop" href="#" data-toggle="modal" data-target="#4">
+                            <img src="http://placemi.com/49zqo/1000x750">
+                            <div class='gal-item-hover'>
+                                hello
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="registry">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-heading">Registry</h2>
@@ -205,15 +288,13 @@
         </div>
     </section>
 
-
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Free Download at Start Bootstrap!</h2>
-                <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
+    <section id="rsvp">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-heading">RSVP</h2>
             </div>
         </div>
-    </aside>
+    </section>
 
 
     <!-- jQuery -->

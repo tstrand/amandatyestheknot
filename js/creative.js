@@ -52,7 +52,8 @@
 
     $(function() {
         $('#pop').on('click', function(e) {
-            e.preventDefault();
+            // e.preventDefault();
+            console.log("hello");
             $('#imagepreview').attr('src', $(this).find('img').attr('src'));
             $('#imagemodal').modal('show');   
         });     
