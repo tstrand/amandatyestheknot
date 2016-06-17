@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+
 @font-face {
     font-family: abraham-lincoln;
     src: url('../fonts/AbrahamLincoln.ttf');
@@ -68,8 +70,9 @@ h1 {
     font-size: 4.5rem;
 }
 h2 {
-    font-family:"lucida calligraphy",arial,'sans serif';
-    font-size: 4.5rem;
+    /*font-family:"lucida calligraphy",arial,'sans serif';*/
+    font-family: 'Alex Brush', cursive;
+    font-size: 6.5rem;
 }
 h4 {
     font-family: abraham-lincoln;
@@ -191,9 +194,25 @@ aside {
     padding: 10px 25px;
 }
 
+.navbar-center > li > a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 2px;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .2s ease, background-color .2s ease;
+}
+
 .navbar-center > li > a:hover, .navbar-center > li.active > a {
     color: #494D4C !important;
     background-color: transparent !important;
+}
+
+.navbar-center > li > a:hover:after, .navbar-center > li.active > a:after {
+    width: 100%;
+    background: #494D4C;
 }
 
 @media(max-width:768px) {
@@ -204,6 +223,9 @@ aside {
     }
     #frond-right {
         display: none;
+    }
+    .navbar-center > li > a {
+        display: inline-block;
     }
 }
 
