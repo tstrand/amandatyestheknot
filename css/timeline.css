@@ -40,20 +40,20 @@
 .timeline-panel {
     width: 46%;
     float: left;
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 20px;
     position: relative;
     background-color: #F6F5F0;
-    border: 1px solid #A58C6B;
+    border: 1px solid rgba(165, 140, 107, 0.14);
 }
 .timeline-panel-full {
     width: 100%;
     text-align: center
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 20px;
     position: relative;
     background-color: #F6F5F0;
-    border: 1px solid #A58C6B;
+    border: 1px solid rgba(165, 140, 107, 0.14);
 }
 .timeline-panel-full p {
     padding-top: 10px;
