@@ -87,7 +87,8 @@ p {
 }
 
 .bg-light {
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-image: url("daimond_eyes.png");
 }
 
 .bg-dark {
