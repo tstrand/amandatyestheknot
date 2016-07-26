@@ -169,7 +169,7 @@ aside {
 .navbar-default {
     border: 0px;
     border-bottom: 1px solid;
-    border-color: #8C9A39;
+    border-color: rgba(140, 154, 57, 0.6);
     background-color: #F6F5F0;
     text-transform: uppercase;
     margin-bottom: 0px;
