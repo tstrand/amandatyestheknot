@@ -37,7 +37,7 @@
                             ["img/bridesmaids/hannah.jpg", "Hannah Kaufman", "Friend"],
                             ["img/bridesmaids/nicolle.jpg", "Nicolle Strand", "Sister-in-Law"]];
         for (var i = 0; i < bridesmaids.length; i++) {
-            var lady = '<div class="col-md-3 col-sm-6 co-xs-12"><div class="gal-item"><a id="pop" href="#" data-toggle="modal" data-target="#3"><img src="' + bridesmaids[i][0] + '"></a><div class="gal-item-meta"><div>' + bridesmaids[i][1] + '</div><div>' + bridesmaids[i][2] + '</div></div></div></div>';
+            var lady = '<div class="col-xs-6 col-sm-4 col-lg-3"><div class="gal-item"><a id="pop" href="#" data-toggle="modal" data-target="#3"><img src="' + bridesmaids[i][0] + '"></a><div class="gal-item-meta"><div class="name">' + bridesmaids[i][1] + '</div><div>' + bridesmaids[i][2] + '</div></div></div></div>';
             $('#bridesmaids').append(lady);
         }
         
@@ -52,7 +52,7 @@
                         ["img/groomsmen/brett.jpg", "Brett Lieberman", "Friend"],
                         ["img/groomsmen/freddie.jpg", "Freddie Adler", "Friend"]];
         for (var i = 0; i < groomsmen.length; i++) {
-            var man = '<div class="col-md-3 col-sm-6 co-xs-12"><div class="gal-item"><a id="pop" href="#" data-toggle="modal" data-target="#3"><img src="' + groomsmen[i][0] + '"></a><div class="gal-item-meta"><div>' + groomsmen[i][1] + '</div><div>' + groomsmen[i][2] + '</div></div></div></div>';
+            var man = '<div class="col-xs-6 col-sm-4 col-lg-3"><div class="gal-item"><a id="pop" href="#" data-toggle="modal" data-target="#3"><img src="' + groomsmen[i][0] + '"></a><div class="gal-item-meta"><div class="name">' + groomsmen[i][1] + '</div><div>' + groomsmen[i][2] + '</div></div></div></div>';
             $('#groomsmen').append(man);
         }
         $("#preloader").fadeOut();
@@ -111,6 +111,12 @@
 
     $('#map-cover').click(function() {
         $('#map-cover').hide();
+    });
+
+    $('body').click(function(e) {
+        if ($(e.target).closest('#map-cover').length === 0) {
+            $('#map-cover').show();
+        }
     });
 
     // Offset for Main Navigation

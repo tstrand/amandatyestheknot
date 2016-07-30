@@ -100,17 +100,20 @@
 }
 
 .circle {
-    width: 34px;
+    width: 24px;
     height: 2px;
     text-align: center;
     position: absolute;
     left: 50%;
-    margin-top: 37px;
-    margin-left: -16px;
+    margin-top: 48px;
+    /*margin-left: -16px;*/
     background-color: #A58C6B;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 1px;
+}
+.left .circle {
+    margin-left: -24px;
 }
 li.right > .timeline-panel {
     float: right;
