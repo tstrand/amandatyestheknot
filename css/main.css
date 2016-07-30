@@ -60,8 +60,14 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    h1 {
+        font-size: 26px;
+    }
     h2 {
         font-size: 45px;
+    }
+    h4 {
+        font-size: 24px;
     }
 }
 
@@ -217,7 +223,7 @@ aside {
     background: #494D4C;
 }
 
-@media(max-width:768px) {
+@media(max-width:767px) {
     .navbar-fixed-bottom {
         position: fixed;
         top: 0px;
