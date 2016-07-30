@@ -100,16 +100,4 @@
         }
     })
 
-    $(function() {
-        $('#pop').on('click', function(e) {
-            // e.preventDefault();
-            console.log("hello");
-            $('#imagepreview').attr('src', $(this).find('img').attr('src'));
-            $('#imagemodal').modal('show');   
-        });     
-    });
-
-    // Initialize WOW.js Scrolling Animations
-    new WOW().init();
-
 })(jQuery); // End of use strict
