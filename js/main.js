@@ -93,6 +93,9 @@
         $('.navbar-toggle:visible').click();
     });
 
+    $('#map-cover').click(function() {
+        $('#map-cover').hide();
+    });
 
     // Offset for Main Navigation
     $('#mainNav').affix({
