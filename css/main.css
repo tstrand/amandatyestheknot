@@ -1,10 +1,6 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 @import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+
+/* General */
 
 @font-face {
     font-family: abraham-lincoln;
@@ -48,23 +44,6 @@ a:focus {
 p {
     font-family: 'FuturaPT';
 }
-
-.responsive-frame {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-    overflow: hidden;
-}
-
-.responsive-frame iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 
 h1 {
     font-size: 4.5rem;
@@ -129,17 +108,18 @@ aside {
     margin: 0px;
 }
 
-/* Modal */
-
-.modal-content {
-    margin-top: 10%;
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999999;
+    overflow: hidden;
 }
 
-.modal-body {
-    padding: 0px;
-}
-
-/* Begin Nav Section */
+/* Nav */
 
 .fronds {
     position: fixed;
@@ -251,69 +231,59 @@ aside {
     }
 }
 
-/* Begin Header Section */
+/* Header */
 
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    height: 100%;
     text-align: center;
 }
-
-header .header-content {
-    position: relative;
+.header-content {
+    position: absolute;
+    top: 50%;
+    padding: 0 50px;
     width: 100%;
-    padding: 100px 15px;
     text-align: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
-
-header .header-content .header-content-inner {
+.header-content-inner {
     margin-right: auto;
     margin-left: auto;
     max-width: 60%;
 }
 
-header .header-content .header-content-inner h1 {
+.header-content-inner h1 {
     margin-top: 70px;
     margin-bottom: 0;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
 }
 
-header .header-content .header-content-inner hr {
+.header-content-inner hr {
     width: 20%;
     margin-top: 10px;
     margin-bottom: 20px: 
 }
 
-header .header-content .header-content-inner p {
+.header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
 }
 
-@media(min-width:768px) {
-    header {
-        min-height: 100%;
+@media(max-width:768px) {
+    .header-content {
+        position: relative;
+        width: 100%;
+        padding: 100px 15px;
+        text-align: center;
     }
-
-    header .header-content {
-        position: absolute;
-        top: 50%;
-        padding: 0 50px;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-
 }
 
 /* Sections */
-
-.container {
-    padding-left: 30px;
-    padding-right: 30px;
-}
 
 section {
     padding: 0px;
@@ -321,8 +291,9 @@ section {
     padding-bottom: 60px;
 }
 
-.no-footer {
-    padding-bottom: 0px;
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .section-header {
@@ -330,18 +301,60 @@ section {
     margin-bottom: 30px;
 }
 
-.footer-overlay {
-    /*background: url('../img/family.jpg') center;*/
-    /*background-size:100%;*/
-    /*height: 500px;*/
+.section-header h3 {
+    margin-top: 0px;
 }
+
+
+/* Where and When */
+
+.responsive-frame {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.responsive-frame iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Registry */
+
+@keyframes dots-1 { from { opacity: 0; } 25% { opacity: 1; } }
+@keyframes dots-2 { from { opacity: 0; } 50% { opacity: 1; } }
+@keyframes dots-3 { from { opacity: 0; } 75% { opacity: 1; } }
+@-webkit-keyframes dots-1 { from { opacity: 0; } 25% { opacity: 1; } }
+@-webkit-keyframes dots-2 { from { opacity: 0; } 50% { opacity: 1; } }
+@-webkit-keyframes dots-3 { from { opacity: 0; } 75% { opacity: 1; } }
+
+.dots span {
+    animation: dots-1 1s infinite steps(1);
+    -webkit-animation: dots-1 1s infinite steps(1);
+}
+
+.dots span:first-child + span {
+    animation-name: dots-2;
+    -webkit-animation-name: dots-2;
+}
+
+.dots span:first-child + span + span {
+    animation-name: dots-3;
+    -webkit-animation-name: dots-3;
+}
+
+/* Footer */
 
 .img-full {
     width: 100%;
 }
 
 .footer-note {
-    /*margin-top: 200px;*/
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -360,9 +373,6 @@ section {
     padding-top: 100px;
     padding-bottom: 15px;
     text-align: right;
-    /*position: absolute;*/
-    /*bottom: 0px;*/
-    /*right: 0px;*/
     background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); 
     background: -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); 
     background: -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); 
@@ -387,259 +397,4 @@ section {
 
 .credit-line a:hover {
     text-decoration: underline;
-}
-
-.section-header h3 {
-    margin-top: 0px;
-}
-
-.service-box {
-    margin: 50px auto 0;
-    max-width: 400px;
-}
-
-.proposal-title {
-    text-align: center;
-    font-size: 40px;
-}
-.proposal-date {
-    text-align: center;
-    font-size: 30px;
-}
-
-.full-bleed {
-    padding: 0px;
-}
-/*.no-padding {
-    padding: 0px;
-}
-*/
-@media(min-width:992px) {
-    .service-box {
-        margin: 20px auto 0;
-    }
-}
-
-.service-box p {
-    margin-bottom: 0;
-}
-
-.portfolio-box {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    max-width: 650px;
-}
-
-.portfolio-box .portfolio-box-caption {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    opacity: 0;
-    background: rgba(240,95,64,.9);
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    transform: translateY(-50%);
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-    font-size: 18px;
-}
-
-.portfolio-box:hover .portfolio-box-caption {
-    opacity: 1;
-}
-
-@media(min-width:768px) {
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        font-size: 16px;
-    }
-
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 22px;
-    }
-}
-
-#credits {
-    float: right;
-}
-
-.call-to-action h2 {
-    margin: 0 auto 20px;
-}
-
-.text-primary {
-    color: #f05f40;
-}
-
-.no-gutter > [class*=col-] {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-.btn-default {
-    border-color: #fff;
-    color: #222;
-    background-color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-.btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-    border-color: #ededed;
-    color: #222;
-    background-color: #f2f2f2;
-}
-
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-    background-image: none;
-}
-
-.btn-default.disabled,
-.btn-default[disabled],
-fieldset[disabled] .btn-default,
-.btn-default.disabled:hover,
-.btn-default[disabled]:hover,
-fieldset[disabled] .btn-default:hover,
-.btn-default.disabled:focus,
-.btn-default[disabled]:focus,
-fieldset[disabled] .btn-default:focus,
-.btn-default.disabled.focus,
-.btn-default[disabled].focus,
-fieldset[disabled] .btn-default.focus,
-.btn-default.disabled:active,
-.btn-default[disabled]:active,
-fieldset[disabled] .btn-default:active,
-.btn-default.disabled.active,
-.btn-default[disabled].active,
-fieldset[disabled] .btn-default.active {
-    border-color: #fff;
-    background-color: #fff;
-}
-
-.btn-default .badge {
-    color: #fff;
-    background-color: #222;
-}
-
-.btn-primary {
-    border-color: #f05f40;
-    color: #fff;
-    background-color: #f05f40;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
-    color: #fff;
-    background-color: #ee4b28;
-}
-
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-    background-image: none;
-}
-
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-    border-color: #f05f40;
-    background-color: #f05f40;
-}
-
-.btn-primary .badge {
-    color: #f05f40;
-    background-color: #fff;
-}
-
-.btn {
-    border: 0;
-    border-radius: 300px;
-    text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
-}
-
-.btn-xl {
-    padding: 15px 30px;
-}
-
-body {
-    webkit-tap-highlight-color: #222;
-}
-@keyframes dots-1 { from { opacity: 0; } 25% { opacity: 1; } }
-@keyframes dots-2 { from { opacity: 0; } 50% { opacity: 1; } }
-@keyframes dots-3 { from { opacity: 0; } 75% { opacity: 1; } }
-@-webkit-keyframes dots-1 { from { opacity: 0; } 25% { opacity: 1; } }
-@-webkit-keyframes dots-2 { from { opacity: 0; } 50% { opacity: 1; } }
-@-webkit-keyframes dots-3 { from { opacity: 0; } 75% { opacity: 1; } }
-
-.dots span {
-    animation: dots-1 1s infinite steps(1);
-    -webkit-animation: dots-1 1s infinite steps(1);
-}
-
-.dots span:first-child + span {
-    animation-name: dots-2;
-    -webkit-animation-name: dots-2;
-}
-
-.dots span:first-child + span + span {
-    animation-name: dots-3;
-    -webkit-animation-name: dots-3;
 }

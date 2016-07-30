@@ -18,9 +18,9 @@
                         ["Moving In", "2015", "img/events/moving.jpg", "After a year back home in New York, Tyler and Amanda packed their bags and moved to Brooklyn! Even though it was just across the river, it felt like the start of something big..."]];
         for (var i = 0; i < events.length; i++) {
             if (i % 2 == 0) {
-                var elem = '<li class="left"><div class="circle"></div><div class="timeline-panel"><h4 class="timeline-subtitle">' + events[i][1] + '</h4><h3 class="timeline-title">' + events[i][0] + '</h3><div id="pop"><img id="imageresource" src="' + events[i][2] + '" class="img-responsive" alt=""></div><p>' + events[i][3] + '</p></div></li>';
+                var elem = '<li class="left"><div class="circle"></div><div class="timeline-panel"><h4 class="timeline-subtitle">' + events[i][1] + '</h4><h3 class="timeline-title">' + events[i][0] + '</h3><img id="imageresource" src="' + events[i][2] + '" class="img-responsive" alt=""><p>' + events[i][3] + '</p></div></li>';
             } else {
-                var elem = '<li class="right"><div class="circle"></div><div class="timeline-panel"><h4 class="timeline-subtitle">' + events[i][1] + '</h4><h3 class="timeline-title">' + events[i][0] + '</h3><div id="pop"><img id="imageresource" src="' + events[i][2] + '" class="img-responsive" alt=""></div><p>' + events[i][3] + '</p></div></li>';                
+                var elem = '<li class="right"><div class="circle"></div><div class="timeline-panel"><h4 class="timeline-subtitle">' + events[i][1] + '</h4><h3 class="timeline-title">' + events[i][0] + '</h3><img id="imageresource" src="' + events[i][2] + '" class="img-responsive" alt=""><p>' + events[i][3] + '</p></div></li>';                
             }
             $('#timeline').append(elem);
         }
@@ -55,6 +55,7 @@
             var man = '<div class="col-md-3 col-sm-6 co-xs-12"><div class="gal-item"><a id="pop" href="#" data-toggle="modal" data-target="#3"><img src="' + groomsmen[i][0] + '"></a><div class="gal-item-meta"><div>' + groomsmen[i][1] + '</div><div>' + groomsmen[i][2] + '</div></div></div></div>';
             $('#groomsmen').append(man);
         }
+        $("#preloader").fadeOut();
     });
 
     $(window).scroll(function () {
