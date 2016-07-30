@@ -85,10 +85,12 @@
 .timeline-panel-full h3 {
     text-align: center;
     font-size: 40px;
+    margin-top: 5px;
 }
 .timeline-panel-full h4 {
     text-align: center;
     font-size: 30px;
+    margin-bottom: 0px;
 }
 .timeline-panel-full p {
     padding-top: 10px;

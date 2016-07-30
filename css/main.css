@@ -167,15 +167,15 @@ aside {
     background: #f9f9f9;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border: 1px solid #4d5150;
+    border: 1px solid #ebe7de;
     border-bottom: 0px;
     padding: 8px 20px;
-    color: #4d5150;
+    color: #656967;
     text-align: center;
 }
 
 .tab:hover {
-    color: #b6be82;
+    color: #4d5150;
 }
 
 .tab-header {
@@ -337,7 +337,10 @@ header {
     font-weight: 300;
 }
 
-@media(max-width:768px) {
+@media(max-width:767px) {
+    header {
+        height: 75%;
+    }
     .header-content {
         position: relative;
         width: 100%;
