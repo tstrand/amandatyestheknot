@@ -114,6 +114,8 @@ aside {
     margin: 0px;
 }
 
+/* Loading */
+
 #preloader {
     position: fixed;
     top: 0;
@@ -143,6 +145,41 @@ aside {
 
 .img-center {
     margin: auto;
+}
+
+/* Callout */
+
+#callout {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    z-index: 100;
+}
+
+.callout-after {
+    
+}
+
+.tab {
+    display: inline-block;
+    background: #f9f9f9;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #4d5150;
+    border-bottom: 0px;
+    padding: 8px 20px;
+    color: #4d5150;
+    text-align: center;
+}
+
+.tab:hover {
+    color: #b6be82;
+}
+
+.tab-header {
+    font-size: 16px;
 }
 
 /* Nav */

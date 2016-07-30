@@ -71,6 +71,22 @@
         } else {
             $('.fronds').removeClass('fronds-after');
         }
+        
+        if ( ($(window).scrollTop() > ( $('#our-story').offset().top)) && ($(window).scrollTop() + $(window).height() < ( $('#wedding-party').offset().top))) {
+            if (!$('#callout').hasClass("visible")) {
+                $('#callout').toggleClass("visible");
+                $('#callout').slideToggle({
+                    direction: "up"
+                }, 300);
+            }
+        } else {
+            if ($('#callout').hasClass("visible")) {
+                $('#callout').toggleClass("visible");
+                $('#callout').slideToggle({
+                    direction: "down"
+                }, 300);
+            }
+        }
     });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
