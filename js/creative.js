@@ -18,9 +18,9 @@
                         ["Moving In", "2015", "img/events/moving.jpg", "After a year back home in New York, Tyler and Amanda packed their bags and moved to Brooklyn! Even though it was just across the river, it felt like the start of something big..."]];
         for (var i = 0; i < events.length; i++) {
             if (i % 2 == 0) {
-                var elem = '<li><div class="circle"></div><div class="timeline-panel"><h3 class="timeline-title">' + events[i][0] + '</h3><h4 class="timeline-subtitle">' + events[i][1] + '</h4><div id="pop"><img id="imageresource" src="' + events[i][2] + '" class="img-responsive" alt=""></div><p>' + events[i][3] + '</p></div></li>';
+                var elem = '<li><div class="circle"></div><div class="timeline-panel"><h4 class="timeline-subtitle">' + events[i][1] + '</h4><h3 class="timeline-title">' + events[i][0] + '</h3><div id="pop"><img id="imageresource" src="' + events[i][2] + '" class="img-responsive" alt=""></div><p>' + events[i][3] + '</p></div></li>';
             } else {
-                var elem = '<li class="timeline-inverted"><div class="circle"></div><div class="timeline-panel"><h3 class="timeline-title">' + events[i][0] + '</h3><h4 class="timeline-subtitle">' + events[i][1] + '</h4><div id="pop"><img id="imageresource" src="' + events[i][2] + '" class="img-responsive" alt=""></div><p>' + events[i][3] + '</p></div></li>';                
+                var elem = '<li class="timeline-inverted"><div class="circle"></div><div class="timeline-panel"><h4 class="timeline-subtitle">' + events[i][1] + '</h4><h3 class="timeline-title">' + events[i][0] + '</h3><div id="pop"><img id="imageresource" src="' + events[i][2] + '" class="img-responsive" alt=""></div><p>' + events[i][3] + '</p></div></li>';                
             }
             $('#timeline').append(elem);
         }
@@ -34,7 +34,7 @@
                             ["img/bridesmaids/carol.jpg", "Carolina Brita", "Cousin"],
                             ["img/bridesmaids/katie.jpg", "Katie Walker", "Friend"],
                             ["img/bridesmaids/luana.jpg", "Luana Dias Gomes", "Friend"],
-                            ["img/bridesmaids/luana.jpg", "Hannah Kaufman", "Friend"],
+                            ["img/bridesmaids/hannah.jpg", "Hannah Kaufman", "Friend"],
                             ["img/bridesmaids/nicolle.jpg", "Nicolle Strand", "Sister-in-Law"]];
         for (var i = 0; i < bridesmaids.length; i++) {
             var lady = '<div class="col-md-3 col-sm-6 co-xs-12"><div class="gal-item"><a id="pop" href="#" data-toggle="modal" data-target="#3"><img src="' + bridesmaids[i][0] + '"></a><div class="gal-item-meta"><div>' + bridesmaids[i][1] + '</div><div>' + bridesmaids[i][2] + '</div></div></div></div>';
@@ -42,14 +42,14 @@
         }
         
         var groomsmen = [["img/groomsmen/mike.jpg", "Mike Nehmad", "Best Man & Friend"],
-                        ["img/groomsmen/billy.jpg", "Chris Eismann", "Best Man & Cousin"],
+                        ["img/groomsmen/chris.jpg", "Chris Eismann", "Best Man & Cousin"],
                         ["img/groomsmen/thiago.jpg", "Thiago Valente", "Cousin-in-Law"],
                         ["img/groomsmen/keane.jpg", "Keane Ehsani", "Friend"],
                         ["img/groomsmen/phoun.jpg", "Phounsouk Sivilay", "Friend"],
                         ["img/groomsmen/nicky.jpg", "Nicky Harnik", "Friend"],
                         ["img/groomsmen/billy.jpg", "Bill Eismann", "Cousin"],
                         ["img/groomsmen/shane.jpg", "Shane Hegde", "Friend"],
-                        ["img/groomsmen/shane.jpg", "Brett Lieberman", "Friend"],
+                        ["img/groomsmen/brett.jpg", "Brett Lieberman", "Friend"],
                         ["img/groomsmen/freddie.jpg", "Freddie Adler", "Friend"]];
         for (var i = 0; i < groomsmen.length; i++) {
             var man = '<div class="col-md-3 col-sm-6 co-xs-12"><div class="gal-item"><a id="pop" href="#" data-toggle="modal" data-target="#3"><img src="' + groomsmen[i][0] + '"></a><div class="gal-item-meta"><div>' + groomsmen[i][1] + '</div><div>' + groomsmen[i][2] + '</div></div></div></div>';
