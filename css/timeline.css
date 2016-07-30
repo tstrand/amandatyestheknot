@@ -26,9 +26,18 @@
     margin-bottom: 20px;
     position: relative;
 }
-.timeline li + li {
-    margin-top: -250px;
+
+/*#first + li {
+    margin-top: -400px;
+}*/
+.left + li {
+    margin-top: -430px;
 }
+
+.right + li {
+    margin-top: -80px;
+}
+
 .timeline > li:before, .timeline > li:after {
     content: " ";
     display: table;
@@ -78,28 +87,28 @@
 }
 
 .circle {
-    width: 16px;
-    height: 16px;
+    width: 34px;
+    height: 2px;
     text-align: center;
     position: absolute;
     left: 50%;
-    margin-top: 5px;
-    margin-left: -8px;
+    margin-top: 37px;
+    margin-left: -16px;
     background-color: #A58C6B;
-    -webkit-border-radius: 50px; /* Safari, Chrome */
-       -moz-border-radius: 50px; /* Firefox */
-            border-radius: 50px; /* CSS3 */
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 1px;
 }
-li.timeline-inverted > .timeline-panel {
+li.right > .timeline-panel {
     float: right;
 }
-.timeline > li.timeline-inverted > .timeline-panel:before {
+.timeline > li.right > .timeline-panel:before {
     border-left-width: 0;
     border-right-width: 15px;
     left: -15px;
     right: auto;
 }
-.timeline > li.timeline-inverted > .timeline-panel:after {
+.timeline > li.right > .timeline-panel:after {
     border-left-width: 0;
     border-right-width: 14px;
     left: -14px;
