@@ -125,6 +125,26 @@ aside {
     overflow: hidden;
 }
 
+.alignment {
+    position: absolute;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.center-middle {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.v-align {
+    display: table-cell;
+}
+
+.img-center {
+    margin: auto;
+}
+
 /* Nav */
 
 .fronds {
