@@ -9,12 +9,12 @@
 
     $(window).load(function () {
         var events = [["Young Love", "2005", "img/events/8th-grade.jpg", "Tyler and Amanda met in middle school when they were just 11 years old. Amanda was a new student in 7th grade, and Tyler, quickly smitten, was eager to show her around."],
-                        ["High School Sweethearts", "2008", "img/events/highschool1.jpg", "After just 3 years of courtship, Tyler's crush was finally reciprocated, and Amanda agreed to go on a date at the Central Park zoo."],
+                        ["High School Sweethearts", "2008", "img/events/highschool.jpg", "After just 3 years of courtship, Tyler's crush was finally reciprocated, and Amanda agreed to go on a date at the Central Park zoo."],
                         ["Heading West", "2010", "img/events/hm-grad.jpg", "After graudating from Horace Mann, Tyler and Amanda headed west to Stanford. What a happy coincidence that they both decided to go to the same college!"],
                         ["Freshman Year", "2011", "img/events/freshman.jpg", "College was full of new people and new experiences. Tyler joined the squash team while Amanda played soccer. They spent countless hours in the library, Tyler coding for his computer science classes while Amanda studied management science and engineering."],
-                        ["Study Abroad", "2012", "img/events/abroad.png", "After 4 straight years spent by each other's side, Amanda headed off to study in Paris, and Tyler flew south to Brazil. Amidst endless nights of sobbing on long distance phone calls, they managed to find some time for fun."],
+                        ["Study Abroad", "2012", "img/events/abroad.jpg", "After 4 straight years spent by each other's side, Amanda headed off to study in Paris, and Tyler flew south to Brazil. Amidst endless nights of sobbing on long distance phone calls, they managed to find some time for fun."],
                         ["Dancing Through Life", "2013", "img/events/dancing.jpg", "After returning from abroad, Tyler and Amanda enjoyed their last few trimesters partying with friends in Sigma Nu and Pi Phi."],
-                        ["See ya Stanford!", "2014", "img/events/grad.png", "Before they new it, college was over. Tyler became a Product Manager working for a tech company in New York, and Amanda joined McKinsey & Company  as a consultant."],
+                        ["See ya Stanford!", "2014", "img/events/grad.jpg", "Before they new it, college was over. Tyler became a Product Manager working for a tech company in New York, and Amanda joined McKinsey & Company  as a consultant."],
                         ["Moving In", "2015", "img/events/moving.jpg", "After a year back home in New York, Tyler and Amanda packed their bags and moved to Brooklyn! Even though it was just across the river, it felt like the start of something big..."]];
         for (var i = 0; i < events.length; i++) {
             if (i % 2 == 0) {
