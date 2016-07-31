@@ -436,10 +436,16 @@ section {
     text-align: center;
 }
 
-.footer-note h2 {
+.footer-msg {
     color: #f6f5f0;
     position: absolute;
     width: 100%;
+}
+
+.footer-msg h2 {
+    display: inline-block;
+    max-width: 50%;
+    font-size: 40px;
 }
 
 .footer-credit {
@@ -457,6 +463,9 @@ section {
 @media (max-width: 767px) {
     .footer-credit {
         margin-top: 7%;
+    }
+    .footer-msg h2 {
+        font-size: 30px;
     }
 }
 
