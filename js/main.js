@@ -7,6 +7,7 @@
 (function($) {
     "use strict"; // Start of use strict
 
+    // Insert timeline and wedding party content (to avoid repeated HTML)
     $(window).load(function () {
         var events = [["Young Love", "2005", "img/events/8th-grade.jpg", "Tyler and Amanda met in middle school when they were just 11 years old. Amanda was a new student in 7th grade, and Tyler, quickly smitten, was eager to show her around."],
                         ["High School Sweethearts", "2008", "img/events/highschool.jpg", "After just 3 years of courtship, Tyler's crush was finally reciprocated, and Amanda agreed to go on a date at the Central Park zoo."],
@@ -58,6 +59,7 @@
         $("#preloader").fadeOut();
     });
 
+    // Fix the nav to the top and bottom are the right times, and surface the Portuguese prompt
     $(window).scroll(function () {
         if ( $(window).scrollTop() > ( $('#home').offset().top + $('#home').height() - $('#mainNav').height() - 10) ) {
             $('#mainNav').addClass("navbar-fixed-top");
@@ -109,10 +111,10 @@
         $('.navbar-toggle:visible').click();
     });
 
+    // Activate and deactivate scrolling on the map embed
     $('#map-cover').click(function() {
         $('#map-cover').hide();
     });
-
     $('body').click(function(e) {
         if ($(e.target).closest('#map-cover').length === 0) {
             $('#map-cover').show();
@@ -126,4 +128,4 @@
         }
     })
 
-})(jQuery); // End of use strict
+})(jQuery);

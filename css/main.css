@@ -339,7 +339,7 @@ header {
 
 @media(max-width:767px) {
     header {
-        height: 75%;
+        height: 550px;
     }
     .header-content {
         position: relative;
