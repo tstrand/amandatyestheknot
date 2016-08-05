@@ -9,6 +9,7 @@
 
     // Insert timeline and wedding party content (to avoid repeated HTML)
     $(window).load(function () {
+        console.log(window.location.href.toString());
         var events = [["Young Love", "2005", "img/events/8th-grade.jpg", "Tyler and Amanda met in middle school when they were just 11 years old. Amanda was a new student in 7th grade, and Tyler, quickly smitten, was eager to show her around."],
                         ["High School Sweethearts", "2008", "img/events/highschool.jpg", "After just 3 years of courtship, Tyler's crush was finally reciprocated, and Amanda agreed to go on a date to the Central Park zoo."],
                         ["Heading West", "2010", "img/events/hm-grad.jpg", "After graduating from Horace Mann, Tyler and Amanda headed west to Stanford. What a happy coincidence that they both decided to go to the same college!"],
