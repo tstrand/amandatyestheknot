@@ -141,6 +141,37 @@ li.right > .timeline-panel {
     margin-top: 5px;
 }
 
+.carousel-indicators {
+    bottom: 0px;
+}
+
+.chevron {
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    width: 30px;
+    fill: rgba(255, 255, 255, 0.75);
+    margin-top: -15px;
+}
+
+.right{
+    right: 5px;
+}
+
+.left{
+    left: 5px;
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+}
+
+.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+}
+
 @media (max-width: 767px) {
     .timeline:before {
         display: none;
