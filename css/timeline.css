@@ -154,11 +154,11 @@ li.right > .timeline-panel {
     margin-top: -15px;
 }
 
-.right{
+.chevron-right{
     right: 5px;
 }
 
-.left{
+.chevron-left{
     left: 5px;
 }
 
