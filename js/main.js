@@ -30,7 +30,7 @@
 
         var bridesmaids = [["img/bridesmaids/jasmine.jpg", "Jasmine Li", "Maid of Honor & Friend"],
                             ["img/bridesmaids/moo.jpg", "Molly Duff", "Maid of Honor & Friend"],
-                            ["img/bridesmaids/carol.jpg", "Maria Carolina Brito Pena", "Cousin"],
+                            ["img/bridesmaids/carol.jpg", "M. Carolina Ferreira", "Cousin"],
                             ["img/bridesmaids/nicolle.jpg", "Nicolle Strand", "Sister-in-Law"],
                             ["img/bridesmaids/greta.jpg", "Greta Anderson", "Friend"],
                             ["img/bridesmaids/luana.jpg", "Luana Dias Gomes", "Friend"],
