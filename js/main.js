@@ -62,6 +62,8 @@
 
     // Fix the nav to the top and bottom are the right times, and surface the Portuguese prompt
     $(window).scroll(function () {
+        $("#myCarousel:in-viewport").carousel('cycle');
+
         if ( $(window).scrollTop() > ( $('#home').offset().top + $('#home').height() - $('#mainNav').height() - 10) ) {
             $('#mainNav').addClass("navbar-fixed-top");
             $('#mainNav').removeClass("navbar-fixed-bottom");
