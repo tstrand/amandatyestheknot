@@ -28,31 +28,31 @@
         }
         $('#timeline').append('<li class="timeline-end"><div class="circle"></div></li>');
 
-        var bridesmaids = [["img/bridesmaids/jasmine.jpg", "Jasmine Li", "Maid of Honor & Friend"],
-                            ["img/bridesmaids/moo.jpg", "Molly Duff", "Maid of Honor & Friend"],
-                            ["img/bridesmaids/carol.jpg", "M. Carolina Ferreira", "Cousin"],
-                            ["img/bridesmaids/nicolle.jpg", "Nicolle Strand", "Sister-in-Law"],
-                            ["img/bridesmaids/greta.jpg", "Greta Anderson", "Friend"],
-                            ["img/bridesmaids/luana.jpg", "Luana Dias Gomes", "Friend"],
-                            ["img/bridesmaids/aiyi.jpg", "Aiyi Ecker", "Friend"],
-                            ["img/bridesmaids/chrissy.jpg", "Chrissy Jones", "Friend"],
-                            ["img/bridesmaids/hannah.jpg", "Hannah Kauffman", "Friend"],
-                            ["img/bridesmaids/katie.jpg", "Katie Walker", "Friend"]];
+        var bridesmaids = [["img/bridesmaids/jasmine.jpg", "Jasmine Li", "Maid of Honor & Amiga"],
+                            ["img/bridesmaids/moo.jpg", "Molly Duff", "Maid of Honor & Amiga"],
+                            ["img/bridesmaids/carol.jpg", "M. Carolina Ferreira", "Prima"],
+                            ["img/bridesmaids/nicolle.jpg", "Nicolle Strand", "Irmã do Noivo"],
+                            ["img/bridesmaids/greta.jpg", "Greta Anderson", "Amiga"],
+                            ["img/bridesmaids/luana.jpg", "Luana Dias Gomes", "Amiga"],
+                            ["img/bridesmaids/aiyi.jpg", "Aiyi Ecker", "Amiga"],
+                            ["img/bridesmaids/chrissy.jpg", "Chrissy Jones", "Amiga"],
+                            ["img/bridesmaids/hannah.jpg", "Hannah Kauffman", "Amiga"],
+                            ["img/bridesmaids/katie.jpg", "Katie Walker", "Amiga"]];
         for (var i = 0; i < bridesmaids.length; i++) {
             var lady = '<div class="col-xs-6 col-sm-4 col-lg-3"><div class="gal-item"><a id="pop" href="#" data-toggle="modal" data-target="#3"><img src="' + bridesmaids[i][0] + '"></a><div class="gal-item-meta"><div class="name">' + bridesmaids[i][1] + '</div><div>' + bridesmaids[i][2] + '</div></div></div></div>';
             $('#bridesmaids').append(lady);
         }
         
-        var groomsmen = [["img/groomsmen/mike.jpg", "Mike Nehmad", "Best Man & Friend"],
-                        ["img/groomsmen/chris.jpg", "Chris Eismann", "Best Man & Cousin"],
-                        ["img/groomsmen/billy.jpg", "Bill Eismann", "Cousin"],
-                        ["img/groomsmen/thiago.jpg", "Thiago Valente", "Cousin-in-Law"],
-                        ["img/groomsmen/freddie.jpg", "Freddie Adler", "Friend"],
-                        ["img/groomsmen/keane.jpg", "Keane Ehsani", "Friend"],
-                        ["img/groomsmen/phoun.jpg", "Phounsouk Sivilay", "Friend"],
-                        ["img/groomsmen/nicky.jpg", "Nicky Harnik", "Friend"],
-                        ["img/groomsmen/shane.jpg", "Shane Hegde", "Friend"],
-                        ["img/groomsmen/brett.jpg", "Brett Lieberman", "Friend"]];
+        var groomsmen = [["img/groomsmen/mike.jpg", "Mike Nehmad", "Best Man & Amigo"],
+                        ["img/groomsmen/chris.jpg", "Chris Eismann", "Best Man & Primo"],
+                        ["img/groomsmen/billy.jpg", "Bill Eismann", "Primo"],
+                        ["img/groomsmen/thiago.jpg", "Thiago Valente", "Primo da Noiva"],
+                        ["img/groomsmen/freddie.jpg", "Freddie Adler", "Amigo"],
+                        ["img/groomsmen/keane.jpg", "Keane Ehsani", "Amigo"],
+                        ["img/groomsmen/phoun.jpg", "Phounsouk Sivilay", "Amigo"],
+                        ["img/groomsmen/nicky.jpg", "Nicky Harnik", "Amigo"],
+                        ["img/groomsmen/shane.jpg", "Shane Hegde", "Amigo"],
+                        ["img/groomsmen/brett.jpg", "Brett Lieberman", "Amigo"]];
         for (var i = 0; i < groomsmen.length; i++) {
             var man = '<div class="col-xs-6 col-sm-4 col-lg-3"><div class="gal-item"><a id="pop" href="#" data-toggle="modal" data-target="#3"><img src="' + groomsmen[i][0] + '"></a><div class="gal-item-meta"><div class="name">' + groomsmen[i][1] + '</div><div>' + groomsmen[i][2] + '</div></div></div></div>';
             $('#groomsmen').append(man);
