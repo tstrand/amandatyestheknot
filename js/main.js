@@ -62,6 +62,8 @@
 
     // Fix the nav to the top and bottom are the right times, and surface the Portuguese prompt
     $(window).scroll(function () {
+        $("#myCarousel:in-viewport").carousel('cycle');
+        
         if ( $(window).scrollTop() > ( $('#home').offset().top + $('#home').height() - $('#mainNav').height() - 10) ) {
             $('#mainNav').addClass("navbar-fixed-top");
             $('#mainNav').removeClass("navbar-fixed-bottom");
@@ -75,21 +77,21 @@
             $('.fronds').removeClass('fronds-after');
         }
         
-        // if ( ($(window).scrollTop() > ( $('#our-story').offset().top)) && ($(window).scrollTop() + $(window).height() < ( $('#wedding-party').offset().top))) {
-        //     if (!$('#callout').hasClass("visible")) {
-        //         $('#callout').toggleClass("visible");
-        //         $('#callout').slideToggle({
-        //             direction: "up"
-        //         }, 300);
-        //     }
-        // } else {
-        //     if ($('#callout').hasClass("visible")) {
-        //         $('#callout').toggleClass("visible");
-        //         $('#callout').slideToggle({
-        //             direction: "down"
-        //         }, 300);
-        //     }
-        // }
+        if ( ($(window).scrollTop() > ( $('#our-story').offset().top)) && ($(window).scrollTop() + $(window).height() < ( $('#wedding-party').offset().top))) {
+            if (!$('#callout').hasClass("visible")) {
+                $('#callout').toggleClass("visible");
+                $('#callout').slideToggle({
+                    direction: "up"
+                }, 300);
+            }
+        } else {
+            if ($('#callout').hasClass("visible")) {
+                $('#callout').toggleClass("visible");
+                $('#callout').slideToggle({
+                    direction: "down"
+                }, 300);
+            }
+        }
     });
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -127,6 +129,6 @@
         offset: {
             top: 100
         }
-    })
+    });
 
 })(jQuery);
